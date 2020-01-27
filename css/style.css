@@ -3,3 +3,30 @@
     height: 700px;
     background-size: cover;
 }
+
+section {
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* width: 100%; */
+    height: 100vh;
+    /* background: url('../img/scroll.jpeg'); */
+    background-image: url('../img/parth.jpg');
+    background-attachment: fixed;
+    clip-path: circle(0px at center);
+}
+
+.container_scroll {
+    position: relative;
+    margin-top: 200vh;
+    background: #fff;
+    padding: 100px;
+}
+
+.title_scroll {
+    position: relative;
+    top: 250px;
+    z-index: 1;
+    font-size: 3em;
+    text-align: center;
+}

@@ -23,7 +23,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" style="background:#6610f2;">
         <a class="navbar-brand" href="#">HOME</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -39,18 +39,49 @@
             </div>
         </div>
     </nav>
-    <div id="section1" class="text-center center" style="top:50%">
+    <!-- <div id="section1" class="text-center center" style="top:50%">
         <br>
         <br>
         <br>
         <br>
         <br>
-        <br>
-        <br>
-        <img src="img/profile.jpeg" class="rounded rounded-circle img-thumbnail" alt="Unknown legend" style="width: 300px; height:auto;">
+        <!-- <br> -->
+    <!-- <br>
+        <img src="img/profile.jpeg" class="rounded rounded-circle img-thumbnail img-responsive" alt="Unknown legend" style="width: 300px; height:auto;">
         <h1 class="bold" style="font-size:2 em; color:aliceblue;">PARTH PATEL</h1>
+        <h2 class="lead" style="font-size:1.5 em; color:aliceblue;">Web || Android Developer</h2>
+        <p style="font-size:1.5 em; color:aliceblue;">Where life takes me</p>
 
+    </div> -->
+    <h2 class="title_scroll" data-aos="zoom-in-up"> Hey, I am Parth Patel
+        <br> Wanna Know more scroll down for that
+        <br> </h2>
+    <section class="section_scroll"></section>
+    <div class="container_scroll text-center" data-aos="zoom-in-up">
+        <h2>Web || Android developer </h2>
+        <p> Depends on what you wanna make</p>
     </div>
+    <div class="container-fluid" data-aos="zoom-in" style="background-color: #fff;">
+        <h1 class="jumbotron">Education</h1>
+
+        <ul class="list-group" style="font-size: 2em;">
+            <li class="list-group-item">B.tech ICT from Ahmedabad University</li>
+            <li class="list-group-item">HSC from Atomic Energy Central School,Kakrapar</li>
+            <li class="list-group-item">SSC from Atomic Energy Central School,Kakrapar</li>
+        </ul>
+    </div>
+    <script type="text/javascript">
+        var section = document.querySelector('section');
+        window.addEventListener('scroll', function() {
+            var value = window.scrollY;
+            section.style.clipPath = "circle(" + value + "px at center)"
+
+        })
+    </script>
+
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
